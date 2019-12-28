@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -40,9 +40,9 @@ import javax.swing.table.DefaultTableModel;
 
 import com.toedter.calendar.JDateChooser;
 
-import quanlynhahang.model.KhachHang;
+import quanlynhahang.entity.KhachHang;
+import quanlynhahang.entity.NhanVien;
 import quanlynhahang.model.KhachHangService;
-import quanlynhahang.model.NhanVien;
 import quanlynhahang.model.NhanVienService;
 import quanlynhahang.model.SQLService;
 

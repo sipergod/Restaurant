@@ -1,4 +1,4 @@
-package quanlynhahang.model;
+package quanlynhahang.entity;
 
 import java.io.Serializable;
 import java.util.Vector;

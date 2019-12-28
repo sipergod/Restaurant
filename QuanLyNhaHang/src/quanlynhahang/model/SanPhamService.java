@@ -7,6 +7,8 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
+import quanlynhahang.entity.SanPham;
+
 
 public class SanPhamService extends SQLService {
 	PreparedStatement prepare=null;

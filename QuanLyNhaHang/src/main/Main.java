@@ -1,6 +1,6 @@
 package main;
 
-import quanlynhahangui.DangNhap;
+import quanlynhahang.gui.DangNhap;
 
 public class Main {
 

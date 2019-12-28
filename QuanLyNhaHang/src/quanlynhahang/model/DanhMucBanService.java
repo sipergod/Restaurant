@@ -8,6 +8,8 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
+import quanlynhahang.entity.DanhMucBan;
+
 public class DanhMucBanService extends SQLService{
 	Statement statement;
 	ResultSet result;

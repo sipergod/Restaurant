@@ -21,23 +21,18 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.border.EtchedBorder;
 
-
-
-
-
-
-import quanlynhahangui.DangNhap;
-import quanlynhahangui.DatTiec;
-import quanlynhahangui.Order;
-import quanlynhahangui.QuanLyBanAn;
-import quanlynhahangui.QuanLyBanHang;
-import quanlynhahangui.QuanLyChucVu;
-import quanlynhahangui.QuanLyKhachHang;
-import quanlynhahangui.QuanLyMonAn;
-import quanlynhahangui.QuanLyNhanVien;
-import quanlynhahangui.QuanLyTiec;
-import quanlynhahangui.ThongKe;
-import quanlynhahangui.ThongKeTiec;
+import quanlynhahang.gui.DangNhap;
+import quanlynhahang.gui.DatTiec;
+import quanlynhahang.gui.Order;
+import quanlynhahang.gui.QuanLyBanAn;
+import quanlynhahang.gui.QuanLyBanHang;
+import quanlynhahang.gui.QuanLyChucVu;
+import quanlynhahang.gui.QuanLyKhachHang;
+import quanlynhahang.gui.QuanLyMonAn;
+import quanlynhahang.gui.QuanLyNhanVien;
+import quanlynhahang.gui.QuanLyTiec;
+import quanlynhahang.gui.ThongKe;
+import quanlynhahang.gui.ThongKeTiec;
 
 public class QuanLyNhaHang extends JFrame {
 	JTabbedPane tab, tab1, tab2,tab3,tab4;

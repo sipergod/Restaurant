@@ -1,16 +1,10 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
-import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
-import java.sql.Connection;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -18,11 +12,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import quanlynhahangui.*;
-public class QuanLy extends JFrame {
-	Connection conn;
-	JButton btnNV, btnHH, btnBan, btnThong, btnLog,btnQLBan,btnKhachHang;
-	public QuanLy(String title) {
+public class NhanVien extends JFrame {
+	JButton btnNV, btnHH, btnBan, btnThong, btnLog;
+
+	public NhanVien(String title) {
 		super(title);
 		addControls();
 		addEvents();
@@ -30,23 +23,14 @@ public class QuanLy extends JFrame {
 	}
 
 	private void addEvents() {
-
 		/*btnHH.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
-
-				GiaoDienQLHH();
-
-			}
-
-			private void GiaoDienQLHH() {
 				QuanLyMonAn S = new QuanLyMonAn("Quản lý món ăn");
 				S.showWindow();
 
 			}
-
 		});*/
-
 		/*btnNV.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
@@ -55,10 +39,9 @@ public class QuanLy extends JFrame {
 
 			}
 		});*/
-		/*btnBan.addActionListener(new ActionListener() {
+		/*tnBan.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
-				
 				QuanLyBanHang S = new QuanLyBanHang("Quản lý bán hàng");
 				S.showWindow();
 
@@ -78,25 +61,8 @@ public class QuanLy extends JFrame {
 				logout();
 				DangNhap S = new DangNhap("Đăng nhập");
 				S.showWindow();
-
 			}
 		});
-		/*btnQLBan.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				QuanLyBanAn ui=new QuanLyBanAn("Quản lý bàn ăn");
-				ui.showWindow();
-			}
-		});*/
-		/*btnKhachHang.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				QuanLyKhachHang kh=new QuanLyKhachHang("Khách Hàng");
-				kh.showWindow();
-			}
-		});*/
 
 	}
 
@@ -107,7 +73,7 @@ public class QuanLy extends JFrame {
 	private void addControls() {
 		Container con = getContentPane();
 		con.setLayout(new BorderLayout());
-		
+
 		JPanel pnBottom = new JPanel();
 		pnBottom.setLayout(new BorderLayout());
 		JLabel lbl1 = new JLabel();
@@ -115,17 +81,17 @@ public class QuanLy extends JFrame {
 
 		lbl1.setIcon(img1);
 
-		//pnBottom.add(lbl1, BorderLayout.CENTER);
+		pnBottom.add(lbl1, BorderLayout.CENTER);
 		JLabel lbl = new JLabel();
 		ImageIcon img = new ImageIcon("img/33.jpg");
-		
+
 		lbl.setIcon(img);
-		//lbl.setPreferredSize(new Dimension(0,200));
-		//pnBottom.add(lbl, BorderLayout.SOUTH);
+
+		pnBottom.add(lbl, BorderLayout.SOUTH);
 
 		con.add(pnBottom, BorderLayout.CENTER);
 		JPanel pnBut = new JPanel();
-		pnBut.setLayout(new FlowLayout());
+		pnBut.setLayout(new FlowLayout(FlowLayout.LEFT));
 		btnNV = new JButton("Nhân Viên");
 		btnHH = new JButton("Món Ăn");
 		btnBan = new JButton("Bán Hàng");
@@ -134,31 +100,26 @@ public class QuanLy extends JFrame {
 		btnLog.setIcon(new ImageIcon("img/31.png"));
 		pnBut.add(btnHH);
 		btnHH.setIcon(new ImageIcon("img/monan.png"));
-		btnQLBan=new JButton("Bàn ăn");
-		btnQLBan.setIcon(new ImageIcon("img/banan.png"));
-		btnKhachHang=new JButton("Khách hàng");
-		btnKhachHang.setIcon(new ImageIcon("img/banan.png"));
+
 		pnBut.add(btnNV);
 		btnNV.setIcon(new ImageIcon("img/nhanvien.png"));
 		pnBut.add(btnBan);
 		btnBan.setIcon(new ImageIcon("img/ic1s1.png"));
-		//btnBan.setEnabled(false);
 		pnBut.add(btnThong);
 		btnThong.setIcon(new ImageIcon("img/1.png"));
-		pnBut.add(btnQLBan);
-		pnBut.add(btnKhachHang);
 		pnBut.add(btnLog);
-		
-		pnBottom.add(pnBut, BorderLayout.CENTER);
-		
-	}
+		pnBottom.add(pnBut, BorderLayout.NORTH);
+		btnNV.setEnabled(false);
 
+	}
 	public void showWindow() {
 		this.setSize(580, 500);
 		this.setVisible(true);
+		
 		this.setLocationRelativeTo(null);
-		this.setResizable(true);
+		this.setResizable(false);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 	}
+	
 }

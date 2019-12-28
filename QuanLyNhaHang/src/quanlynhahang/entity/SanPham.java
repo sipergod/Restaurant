@@ -1,4 +1,4 @@
-package quanlynhahang.model;
+package quanlynhahang.entity;
 
 public class SanPham {
 	String maSP;

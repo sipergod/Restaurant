@@ -5,7 +5,9 @@ import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
 import java.util.Vector;
 
-public class KhachHangService extends SQLService{
+import quanlynhahang.entity.KhachHang;
+
+public class KhachHangService extends SQLService {
 	PreparedStatement prepare;
 
 	SimpleDateFormat spf = new SimpleDateFormat("dd/mm/yyyy");
@@ -37,11 +39,11 @@ public class KhachHangService extends SQLService{
 		try {
 			String sql = "Insert into KhachHang values(?,?,?,?,?,?)";
 			prepare = conn.prepareStatement(sql);
-			prepare.setString(1, kh.MaKH);
-			prepare.setString(2, kh.TenKH);
-			prepare.setString(3, kh.GioiTinh);
-			prepare.setString(4, kh.DiaChi);
-			prepare.setString(5, kh.SDT);
+			prepare.setString(1, kh.getMaKH());
+			prepare.setString(2, kh.getTenKH());
+			prepare.setString(3, kh.getGioiTinh());
+			prepare.setString(4, kh.getDiaChi());
+			prepare.setString(5, kh.getSDT());
 			prepare.setString(6, kh.getNgayDK());
 			return prepare.executeUpdate();
 

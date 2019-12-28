@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -21,15 +21,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-
-
-
-
-
-
-import quanlynhahang.model.Ban;
-import quanlynhahang.model.KhachHang;
-import quanlynhahang.model.NhanVien;
+import quanlynhahang.entity.Ban;
+import quanlynhahang.entity.KhachHang;
+import quanlynhahang.entity.NhanVien;
 import quanlynhahang.model.SQLService;
 
 

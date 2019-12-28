@@ -8,6 +8,8 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
+import quanlynhahang.entity.ChucVu;
+
 public class ChucVuService extends SQLService{
 	Statement statement;
 	ResultSet result;

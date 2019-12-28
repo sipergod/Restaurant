@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -32,10 +32,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.table.DefaultTableModel;
 
-import quanlynhahang.model.Ban;
+import quanlynhahang.entity.Ban;
+import quanlynhahang.entity.DanhMuc;
+import quanlynhahang.entity.DanhMucBan;
 import quanlynhahang.model.BanService;
-import quanlynhahang.model.DanhMuc;
-import quanlynhahang.model.DanhMucBan;
 import quanlynhahang.model.DanhMucBanService;
 import quanlynhahang.model.DanhMucService;
 import quanlynhahang.model.SanPhamService;

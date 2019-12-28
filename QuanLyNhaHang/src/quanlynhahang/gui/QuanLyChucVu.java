@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -29,9 +29,9 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import quanlynhahang.model.ChucVu;
+import quanlynhahang.entity.ChucVu;
+import quanlynhahang.entity.DanhMuc;
 import quanlynhahang.model.ChucVuService;
-import quanlynhahang.model.DanhMuc;
 import quanlynhahang.model.DanhMucService;
 import quanlynhahang.model.SQLService;
 

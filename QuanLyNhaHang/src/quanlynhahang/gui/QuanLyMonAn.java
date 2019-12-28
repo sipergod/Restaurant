@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -32,9 +32,9 @@ import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
-import quanlynhahang.model.DanhMuc;
+import quanlynhahang.entity.DanhMuc;
+import quanlynhahang.entity.SanPham;
 import quanlynhahang.model.DanhMucService;
-import quanlynhahang.model.SanPham;
 import quanlynhahang.model.SanPhamService;
 
 public class QuanLyMonAn extends JPanel {
@@ -228,7 +228,11 @@ public class QuanLyMonAn extends JPanel {
 		hh.setTenSP(txtTen.getText());
 		hh.setDVT(txtDVT.getText());
 		hh.setDonGia(Integer.parseInt(txtDonGia.getText()));
-		hh.setImage(txtAnh.getText());
+		if(txtAnh.getText() != null && txtAnh.getText() != "") {
+			hh.setImage(txtAnh.getText());
+		} else {
+			hh.setImage("");
+		}
 		SanPhamService hhSv = new SanPhamService();
 		if (hhSv.UpdateHH(hh) > 0) {
 			JOptionPane.showMessageDialog(null, "Cập nhật thành công");
@@ -295,7 +299,11 @@ public class QuanLyMonAn extends JPanel {
 		hh.setTenSP(txtTen.getText());
 		hh.setDVT(txtDVT.getText());
 		hh.setDonGia(Integer.parseInt(txtDonGia.getText()));
-		hh.setImage(txtAnh.getText());
+		if(txtAnh.getText() != null && txtAnh.getText() != "") {
+			hh.setImage(txtAnh.getText());
+		} else {
+			hh.setImage("");
+		}
 		SanPhamService hhService = new SanPhamService();
 		if (hhService.LuuHangHoa(hh) > 0) {
 			JOptionPane.showMessageDialog(null, "Lưu  thành công");

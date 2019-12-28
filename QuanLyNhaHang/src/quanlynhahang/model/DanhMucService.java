@@ -9,6 +9,8 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
+import quanlynhahang.entity.DanhMuc;
+
 public class DanhMucService extends SQLService {
 	Statement statement;
 	ResultSet result;

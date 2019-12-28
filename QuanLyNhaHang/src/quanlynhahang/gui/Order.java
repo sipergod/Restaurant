@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -31,15 +31,15 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-import quanlynhahang.model.Ban;
+import quanlynhahang.entity.Ban;
+import quanlynhahang.entity.DanhMuc;
+import quanlynhahang.entity.DanhMucBan;
+import quanlynhahang.entity.NhanVien;
+import quanlynhahang.entity.SanPham;
 import quanlynhahang.model.BanService;
-import quanlynhahang.model.DanhMuc;
-import quanlynhahang.model.DanhMucBan;
 import quanlynhahang.model.DanhMucBanService;
 import quanlynhahang.model.DanhMucService;
-import quanlynhahang.model.NhanVien;
 import quanlynhahang.model.SQLService;
-import quanlynhahang.model.SanPham;
 import quanlynhahang.model.SanPhamService;
 
 public class Order extends JPanel {

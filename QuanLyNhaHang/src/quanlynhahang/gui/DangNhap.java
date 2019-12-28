@@ -1,4 +1,4 @@
-package quanlynhahangui;
+package quanlynhahang.gui;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -38,6 +38,7 @@ public class DangNhap extends JFrame {
 
 	public DangNhap(String title) {
 		super(title);
+		setTitle("Đăng nhập");
 		SQLService co = new SQLService();
 		conn = co.connect1();
 		addControls();

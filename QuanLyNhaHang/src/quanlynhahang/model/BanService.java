@@ -6,6 +6,8 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
+import quanlynhahang.entity.Ban;
+
 public class BanService extends SQLService {
 	PreparedStatement prepare=null;
 	public  int LuuBan(Ban b)
