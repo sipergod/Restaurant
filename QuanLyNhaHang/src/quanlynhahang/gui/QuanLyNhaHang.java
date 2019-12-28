@@ -1,4 +1,4 @@
-package main;
+package quanlynhahang.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -20,19 +20,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.border.EtchedBorder;
-
-import quanlynhahang.gui.DangNhap;
-import quanlynhahang.gui.DatTiec;
-import quanlynhahang.gui.Order;
-import quanlynhahang.gui.QuanLyBanAn;
-import quanlynhahang.gui.QuanLyBanHang;
-import quanlynhahang.gui.QuanLyChucVu;
-import quanlynhahang.gui.QuanLyKhachHang;
-import quanlynhahang.gui.QuanLyMonAn;
-import quanlynhahang.gui.QuanLyNhanVien;
-import quanlynhahang.gui.QuanLyTiec;
-import quanlynhahang.gui.ThongKe;
-import quanlynhahang.gui.ThongKeTiec;
 
 public class QuanLyNhaHang extends JFrame {
 	JTabbedPane tab, tab1, tab2,tab3,tab4;

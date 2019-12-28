@@ -23,11 +23,6 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-
-
-
-import main.NhanVienNhaHang;
-import main.QuanLyNhaHang;
 import quanlynhahang.model.SQLService;
 
 public class DangNhap extends JFrame {
